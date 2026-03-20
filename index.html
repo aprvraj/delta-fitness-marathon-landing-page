@@ -12,14 +12,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="bg-white text-slate-900 antialiased">
 
   <!-- ════════ NAVBAR ════════ -->
   <header class="navbar">
-    <div class="container navbar__inner">
+    <div class="container max-w-6xl px-4 lg:px-8 navbar__inner">
       <a href="#home" class="navbar__brand" aria-label="Delta Fitness Marathon home">
-        <img src="images/logo.jfif" alt="Delta Fitness logo" class="navbar__logo" />
-        <span>Delta Fitness Marathon 3.0</span>
+        <img src="images/logo.png" alt="Delta Fitness logo" class="navbar__logo" />
+        <span>DELTA FITNESS</span>
       </a>
       <button class="navbar__toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
         <span></span>
@@ -27,11 +27,9 @@
         <span></span>
       </button>
       <nav class="navbar__links" id="primaryNav" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#race-categories">Races</a>
-        <a href="#benefits">Benefits</a>
+        <a href="https://thedeltafit.com" target="_blank" rel="noopener">Train</a>
         <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener">Register Now</a>
       </nav>
     </div>
   </header>
@@ -40,7 +38,7 @@
   <section class="hero" id="home">
     <img src="images/hero-bg.jpg" alt="Marathon runners at dawn" class="hero__bg" />
     <div class="hero__overlay"></div>
-    <div class="hero__content fade-in">
+    <div class="hero__content fade-in max-w-2xl mx-auto">
       <p class="hero__badge"><i class="fa-solid fa-fire"></i> Season 3</p>
       <h1 class="hero__title">Delta Fitness<br>Marathon 3.0</h1>
       <p class="hero__tagline">"Ek Daud Khud Ke Liye"</p>
@@ -53,35 +51,157 @@
         <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener" class="btn btn--primary btn--glow">
           <i class="fa-solid fa-bolt"></i> Register Now
         </a>
-        <span class="text-white">Registrations are all done Via Townscript.<br/> Click the button to secure your spot!</span>
+        <span class="text-white/90 text-sm md:text-base leading-relaxed">Registrations are all done via Townscript.<br />Click the button to secure your spot.</span>
+      </div>
+      <div class="hero-countdown" aria-label="Registration countdown">
+        <p class="hero-countdown__title">Registration closes in</p>
+        <div class="hero-countdown__timer">
+          <div class="hero-countdown__unit">
+            <span class="hero-countdown__value" id="heroCountdownDays">00</span>
+            <span class="hero-countdown__label">Days</span>
+          </div>
+          <div class="hero-countdown__unit">
+            <span class="hero-countdown__value" id="heroCountdownHours">00</span>
+            <span class="hero-countdown__label">Hours</span>
+          </div>
+          <div class="hero-countdown__unit">
+            <span class="hero-countdown__value" id="heroCountdownMinutes">00</span>
+            <span class="hero-countdown__label">Min</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ════════ QUICK HIGHLIGHTS ════════ -->
+  <!-- ════════ SPONSORS ════════ -->
   <section class="section section--white">
-    <div class="container">
-      <h2 class="section__title">Why Join?</h2>
-      <div class="grid grid--4">
-        <div class="highlight-card fade-in">
-          <div class="highlight-card__icon"><i class="fa-solid fa-person-running"></i></div>
-          <h3>Multiple Race Categories</h3>
-          <p>21K, 10K, 5K & 3K for all levels</p>
+    <div class="container max-w-6xl px-4 lg:px-8">
+      <h2 class="section__title">Our Partners</h2>
+      <div class="sponsors">
+        <div class="sponsor fade-in">
+          <div class="sponsor__icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <p>Sports Partner</p>
         </div>
-        <div class="highlight-card fade-in">
-          <div class="highlight-card__icon"><i class="fa-solid fa-droplet"></i></div>
-          <h3>Hydration & Medical</h3>
-          <p>Full medical support on the route</p>
+        <div class="sponsor fade-in">
+          <div class="sponsor__icon"><i class="fa-solid fa-hospital"></i></div>
+          <p>Hospital Partner</p>
         </div>
-        <div class="highlight-card fade-in">
-          <div class="highlight-card__icon"><i class="fa-solid fa-medal"></i></div>
-          <h3>Finisher Medals</h3>
-          <p>Exclusive medals & goodies for all</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ BANNER + WHY JOIN US ════════ -->
+  <section class="section section--muted section--feature">
+    <div class="container max-w-6xl px-4 lg:px-8 feature">
+      <div class="feature__media fade-in">
+        <img src="images/banner.png" alt="Delta Fitness Marathon banner" class="feature__img" />
+      </div>
+      <div class="feature__content fade-in">
+        <h2 class="section__title section__title--left">Why Join Us</h2>
+        <div class="checklist">
+          <div class="checklist__item"><i class="fa-solid fa-circle-check"></i><span>Multiple race categories for all fitness levels</span></div>
+          <div class="checklist__item"><i class="fa-solid fa-circle-check"></i><span>Hydration, medical safety and route support</span></div>
+          <div class="checklist__item"><i class="fa-solid fa-circle-check"></i><span>Finisher medals, goodies and event t-shirt</span></div>
+          <div class="checklist__item"><i class="fa-solid fa-circle-check"></i><span>Professionally managed and high-energy race day</span></div>
         </div>
-        <div class="highlight-card fade-in">
-          <div class="highlight-card__icon"><i class="fa-solid fa-bullseye"></i></div>
-          <h3>Professional Mgmt</h3>
-          <p>Chip-timed, well-organized event</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ REGISTRATION BENEFITS ════════ -->
+  <section class="section section--white" id="benefits">
+    <div class="container max-w-6xl px-4 lg:px-8">
+      <h2 class="section__title">What You Get</h2>
+      <div class="grid grid--3">
+        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-shirt"></i></div><span>Event T-Shirt</span></div>
+        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-medal"></i></div><span>Finisher Medal</span></div>
+        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-certificate"></i></div><span>Timing Certificate</span></div>
+        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-bottle-water"></i></div><span>Refreshments & Hydration</span></div>
+        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-kit-medical"></i></div><span>Medical Support</span></div>
+        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-gift"></i></div><span>Exciting Goodies</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ PRIZES ════════ -->
+  <section class="section section--dark">
+    <div class="container max-w-6xl px-4 lg:px-8">
+      <h2 class="section__title section__title--light">Prizes</h2>
+      <div class="prizes-grid">
+        <div class="prize-card fade-in">
+          <span class="prize-card__emoji">🥈</span>
+          <p class="prize-card__amount">₹9,000</p>
+          <p class="prize-card__sub">worth goodies</p>
+        </div>
+        <div class="prize-card prize-card--gold fade-in">
+          <span class="prize-card__emoji">🥇</span>
+          <p class="prize-card__amount">₹15,000</p>
+          <p class="prize-card__sub">worth goodies</p>
+        </div>
+        <div class="prize-card fade-in">
+          <span class="prize-card__emoji">🥉</span>
+          <p class="prize-card__amount">₹7,000</p>
+          <p class="prize-card__sub">worth goodies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ IMAGE SLIDER ════════ -->
+  <section class="section section--muted slider-section" id="gallery">
+    <div class="container max-w-6xl px-4 lg:px-8">
+      <h2 class="section__title">Memories from Season 2,<br />The Delta Fitness Marathon 3.0</h2>
+      <div class="slider" id="imageSlider">
+        <button class="slider__nav slider__nav--prev" type="button" id="sliderPrev" aria-label="Previous memory">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="slider__viewport">
+          <div class="slider__track">
+            <img src="gallery/DSC02878.jpg" alt="Delta Fitness marathon gallery image 1" class="slider__img" loading="lazy" />
+            <img src="gallery/DSC03103.jpg" alt="Delta Fitness marathon gallery image 2" class="slider__img" loading="lazy" />
+            <img src="gallery/DSC03144.jpg" alt="Delta Fitness marathon gallery image 3" class="slider__img" loading="lazy" />
+            <img src="gallery/DSC03308.jpg" alt="Delta Fitness marathon gallery image 4" class="slider__img" loading="lazy" />
+            <img src="gallery/DSC03763.jpg" alt="Delta Fitness marathon gallery image 5" class="slider__img" loading="lazy" />
+            <img src="gallery/DSC03820.jpg" alt="Delta Fitness marathon gallery image 6" class="slider__img" loading="lazy" />
+            <img src="gallery/DSC03997.jpg" alt="Delta Fitness marathon gallery image 7" class="slider__img" loading="lazy" />
+            <img src="gallery/DSC04098.jpg" alt="Delta Fitness marathon gallery image 8" class="slider__img" loading="lazy" />
+            <img src="gallery/IMG_8880.jpg" alt="Delta Fitness marathon gallery image 9" class="slider__img" loading="lazy" />
+            <img src="gallery/IMG_8890.jpg" alt="Delta Fitness marathon gallery image 10" class="slider__img" loading="lazy" />
+            <img src="gallery/IMG_9430.jpg" alt="Delta Fitness marathon gallery image 11" class="slider__img" loading="lazy" />
+          </div>
+        </div>
+        <button class="slider__nav slider__nav--next" type="button" id="sliderNext" aria-label="Next memory">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ TESTIMONIALS ════════ -->
+  <section class="section section--white">
+    <div class="container max-w-6xl px-4 lg:px-8">
+      <h2 class="section__title">What People Say About Us</h2>
+      <div class="grid grid--3">
+        <div class="testimonial fade-in">
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial__text">"Amazing experience! The energy at Marathon 2.0 was unreal. Can't wait for 3.0!"</p>
+          <p class="testimonial__name">— Rahul S.</p>
+        </div>
+        <div class="testimonial fade-in">
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial__text">"Best organized marathon event in Faridabad. Loved the medals and goodies!"</p>
+          <p class="testimonial__name">— Priya M.</p>
+        </div>
+        <div class="testimonial fade-in">
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star dim"></i>
+          </div>
+          <p class="testimonial__text">"My first ever 10K run thanks to Delta Fitness. Great support along the route."</p>
+          <p class="testimonial__name">— Amit K.</p>
         </div>
       </div>
     </div>
@@ -89,14 +209,16 @@
 
   <!-- ════════ MID CTA 1 ════════ -->
   <section class="mid-cta">
+    <div class="container max-w-6xl px-4 lg:px-8">
     <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener">
       <i class="fa-solid fa-arrow-right"></i> Secure Your Spot — Register Now
     </a>
+    </div>
   </section>
 
   <!-- ════════ RACE CATEGORIES ════════ -->
   <section class="section section--dark" id="race-categories">
-    <div class="container">
+    <div class="container max-w-6xl px-4 lg:px-8">
       <h2 class="section__title section__title--light">Race Categories</h2>
       <div class="grid grid--4">
         <div class="race-card fade-in">
@@ -127,138 +249,72 @@
     </div>
   </section>
 
-  <!-- ════════ REGISTRATION BENEFITS ════════ -->
-  <section class="section section--white" id="benefits">
-    <div class="container">
-      <h2 class="section__title">What You Get</h2>
-      <div class="grid grid--3">
-        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-shirt"></i></div><span>Event T-Shirt</span></div>
-        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-medal"></i></div><span>Finisher Medal</span></div>
-        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-certificate"></i></div><span>Timing Certificate</span></div>
-        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-bottle-water"></i></div><span>Refreshments & Hydration</span></div>
-        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-kit-medical"></i></div><span>Medical Support</span></div>
-        <div class="benefit-item fade-in"><div class="benefit-item__icon"><i class="fa-solid fa-gift"></i></div><span>Exciting Goodies</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ MID CTA 2 ════════ -->
-  <section class="mid-cta">
-    <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener">
-      <i class="fa-solid fa-arrow-right"></i> Secure Your Spot — Register Now
-    </a>
-  </section>
-
-  <!-- ════════ PRIZES ════════ -->
-  <section class="section section--dark">
-    <div class="container">
-      <h2 class="section__title section__title--light">Prizes</h2>
-      <div class="prizes-grid">
-        <div class="prize-card fade-in">
-          <span class="prize-card__emoji">🥈</span>
-          <p class="prize-card__amount">₹9,000</p>
-          <p class="prize-card__sub">worth goodies</p>
-        </div>
-        <div class="prize-card prize-card--gold fade-in">
-          <span class="prize-card__emoji">🥇</span>
-          <p class="prize-card__amount">₹15,000</p>
-          <p class="prize-card__sub">worth goodies</p>
-        </div>
-        <div class="prize-card fade-in">
-          <span class="prize-card__emoji">🥉</span>
-          <p class="prize-card__amount">₹7,000</p>
-          <p class="prize-card__sub">worth goodies</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ EVENT HIGHLIGHTS ════════ -->
+  <!-- ════════ FAQS ════════ -->
   <section class="section section--white">
-    <div class="container container--sm">
-      <h2 class="section__title">Event Highlights</h2>
-      <div class="checklist">
-        <div class="checklist__item fade-in"><i class="fa-solid fa-circle-check"></i><span>Professionally marked route</span></div>
-        <div class="checklist__item fade-in"><i class="fa-solid fa-circle-check"></i><span>Hydration points every 2 KM</span></div>
-        <div class="checklist__item fade-in"><i class="fa-solid fa-circle-check"></i><span>Medical & safety support</span></div>
-        <div class="checklist__item fade-in"><i class="fa-solid fa-circle-check"></i><span>Community participation</span></div>
-        <div class="checklist__item fade-in"><i class="fa-solid fa-circle-check"></i><span>Fitness awareness initiative</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ IMAGE SLIDER ════════ -->
-  <section class="section section--muted slider-section" id="gallery">
-    <div class="container">
-      <h2 class="section__title">Marathon 2.0 Memories</h2>
-    </div>
-    <div class="slider" id="imageSlider">
-      <div class="slider__track">
-        <img src="event-crowd.jpg" alt="Marathon 2.0 crowd" class="slider__img" loading="lazy" />
-        <img src="event-finish.jpg" alt="Finish line celebration" class="slider__img" loading="lazy" />
-        <img src="event-warmup.jpg" alt="Runners warming up" class="slider__img" loading="lazy" />
-        <img src="hero-bg.jpg" alt="Marathon runners at dawn" class="slider__img" loading="lazy" />
+    <div class="container container--sm max-w-2xl px-4 lg:px-8">
+      <h2 class="section__title">FAQs</h2>
+      <div class="faq fade-in" id="faqList">
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>How do I register for the marathon?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq__answer">
+            Registrations are handled through Townscript. Click on any Register/Book Now button and complete your booking there.
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>What are the race categories?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq__answer">
+            You can choose from 21 KM, 10 KM, 5 KM, and 3 KM categories based on your fitness level and comfort.
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Will hydration and medical support be available?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq__answer">
+            Yes, hydration points and medical assistance are available throughout the event route.
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>What do I get after registration?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq__answer">
+            Registered participants receive race support benefits like event T-shirt, finisher medal, goodies, and more.
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Can I get a refund after registration?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq__answer">
+            No. As mentioned in instructions, registrations are non-refundable once confirmed.
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ════════ MID CTA 3 ════════ -->
   <section class="mid-cta">
+    <div class="container max-w-6xl px-4 lg:px-8">
     <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener">
       <i class="fa-solid fa-arrow-right"></i> Secure Your Spot — Register Now
     </a>
-  </section>
-
-  <!-- ════════ SPONSORS ════════ -->
-  <section class="section section--white">
-    <div class="container">
-      <h2 class="section__title">Our Partners</h2>
-      <div class="sponsors">
-        <div class="sponsor fade-in">
-          <div class="sponsor__icon"><i class="fa-solid fa-dumbbell"></i></div>
-          <p>Sports Partner</p>
-        </div>
-        <div class="sponsor fade-in">
-          <div class="sponsor__icon"><i class="fa-solid fa-hospital"></i></div>
-          <p>Hospital Partner</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ TESTIMONIALS ════════ -->
-  <section class="section section--muted">
-    <div class="container">
-      <h2 class="section__title">What Runners Say</h2>
-      <div class="grid grid--3">
-        <div class="testimonial fade-in">
-          <div class="testimonial__stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-          <p class="testimonial__text">"Amazing experience! The energy at Marathon 2.0 was unreal. Can't wait for 3.0!"</p>
-          <p class="testimonial__name">— Rahul S.</p>
-        </div>
-        <div class="testimonial fade-in">
-          <div class="testimonial__stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-          <p class="testimonial__text">"Best organized marathon event in Faridabad. Loved the medals and goodies!"</p>
-          <p class="testimonial__name">— Priya M.</p>
-        </div>
-        <div class="testimonial fade-in">
-          <div class="testimonial__stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star dim"></i>
-          </div>
-          <p class="testimonial__text">"My first ever 10K run thanks to Delta Fitness. Great support along the route."</p>
-          <p class="testimonial__name">— Amit K.</p>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- ════════ IMPORTANT INSTRUCTIONS ════════ -->
   <section class="section section--white">
-    <div class="container container--sm">
+    <div class="container container--sm max-w-2xl px-4 lg:px-8">
       <h2 class="section__title">Important Instructions</h2>
       <div class="warning-box fade-in">
         <div class="warning-box__item"><i class="fa-solid fa-triangle-exclamation"></i><span>Report at the venue by 5:00 AM sharp</span></div>
@@ -271,7 +327,7 @@
 
   <!-- ════════ FINAL CTA ════════ -->
   <section class="final-cta">
-    <div class="container">
+    <div class="container max-w-6xl px-4 lg:px-8">
       <h2 class="final-cta__title">Ready to Challenge<br>Yourself?</h2>
       <p class="final-cta__sub">Join thousands of runners at Faridabad's biggest fitness event</p>
       <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener" class="btn btn--primary btn--glow btn--lg">
@@ -282,7 +338,7 @@
 
   <!-- ════════ FOOTER ════════ -->
   <footer class="footer" id="contact">
-    <div class="container">
+    <div class="container max-w-6xl px-4 lg:px-8">
       <p class="footer__brand">Delta Fitness Marathon 3.0</p>
       <div class="footer__links">
         <a href="mailto:contact@thedeltafit.com"><i class="fa-solid fa-envelope"></i> contact@thedeltafit.com</a>
@@ -294,9 +350,28 @@
 
   <!-- ════════ STICKY MOBILE CTA ════════ -->
   <div class="sticky-cta" id="stickyCta">
-    <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener" class="btn btn--primary btn--full">
-      <i class="fa-solid fa-bolt"></i> Register Now
-    </a>
+    <div class="sticky-cta__inner">
+      <p class="sticky-cta__note">Registration closes on 28 Mar 2026, 11:59 PM IST</p>
+      <div class="sticky-cta__content">
+        <div class="sticky-cta__timer" aria-live="polite">
+          <div class="sticky-cta__unit">
+            <span class="sticky-cta__value" id="countdownDays">0</span>
+            <span class="sticky-cta__label">Days</span>
+          </div>
+          <div class="sticky-cta__unit">
+            <span class="sticky-cta__value" id="countdownHours">0</span>
+            <span class="sticky-cta__label">Hours</span>
+          </div>
+          <div class="sticky-cta__unit">
+            <span class="sticky-cta__value" id="countdownMinutes">0</span>
+            <span class="sticky-cta__label">Min</span>
+          </div>
+        </div>
+        <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener" class="btn btn--primary sticky-cta__button">
+          Book Now
+        </a>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
