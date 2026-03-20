@@ -9,13 +9,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- ════════ NAVBAR ════════ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__brand" aria-label="Delta Fitness Marathon home">
+        <img src="images/logo.jfif" alt="Delta Fitness logo" class="navbar__logo" />
+        <span>Delta Fitness Marathon 3.0</span>
+      </a>
+      <button class="navbar__toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navbar__links" id="primaryNav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#race-categories">Races</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <!-- ════════ HERO ════════ -->
-  <section class="hero">
-    <img src="hero-bg.jpg" alt="Marathon runners at dawn" class="hero__bg" />
+  <section class="hero" id="home">
+    <img src="images/hero-bg.jpg" alt="Marathon runners at dawn" class="hero__bg" />
     <div class="hero__overlay"></div>
     <div class="hero__content fade-in">
       <p class="hero__badge"><i class="fa-solid fa-fire"></i> Season 3</p>
@@ -30,9 +53,7 @@
         <a href="https://www.townscript.com/e/rverp-134402" target="_blank" rel="noopener" class="btn btn--primary btn--glow">
           <i class="fa-solid fa-bolt"></i> Register Now
         </a>
-        <a href="https://www.google.com/maps/search/Omaxe+World+Street+Faridabad" target="_blank" rel="noopener" class="btn btn--outline">
-          <i class="fa-solid fa-map-location-dot"></i> View Location
-        </a>
+        <span class="text-white">Registrations are all done Via Townscript.<br/> Click the button to secure your spot!</span>
       </div>
     </div>
   </section>
@@ -74,7 +95,7 @@
   </section>
 
   <!-- ════════ RACE CATEGORIES ════════ -->
-  <section class="section section--dark">
+  <section class="section section--dark" id="race-categories">
     <div class="container">
       <h2 class="section__title section__title--light">Race Categories</h2>
       <div class="grid grid--4">
@@ -107,7 +128,7 @@
   </section>
 
   <!-- ════════ REGISTRATION BENEFITS ════════ -->
-  <section class="section section--white">
+  <section class="section section--white" id="benefits">
     <div class="container">
       <h2 class="section__title">What You Get</h2>
       <div class="grid grid--3">
@@ -167,7 +188,7 @@
   </section>
 
   <!-- ════════ IMAGE SLIDER ════════ -->
-  <section class="section section--muted slider-section">
+  <section class="section section--muted slider-section" id="gallery">
     <div class="container">
       <h2 class="section__title">Marathon 2.0 Memories</h2>
     </div>
@@ -260,7 +281,7 @@
   </section>
 
   <!-- ════════ FOOTER ════════ -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
       <p class="footer__brand">Delta Fitness Marathon 3.0</p>
       <div class="footer__links">

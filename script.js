@@ -4,7 +4,24 @@
 
 // Intersection Observer for fade-in animations
 document.addEventListener('DOMContentLoaded', function () {
+  var navToggle = document.querySelector('.navbar__toggle');
+  var navLinks = document.querySelector('.navbar__links');
+  var navLinkItems = document.querySelectorAll('.navbar__links a');
   var fadeEls = document.querySelectorAll('.fade-in');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function () {
+      var isOpen = navLinks.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    navLinkItems.forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {
