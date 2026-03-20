@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (countdownDays && countdownHours && countdownMinutes) {
-    // 28 Mar 2026, 23:59 IST = 28 Mar 2026, 18:29 UTC
-    var closeDeadlineUtc = Date.UTC(2026, 2, 28, 18, 29, 0);
+    // 27 Mar 2026, 18:00 IST = 27 Mar 2026, 12:30 UTC
+    var closeDeadlineUtc = Date.UTC(2026, 2, 27, 12, 30, 0);
 
     function pad2(value) {
       return value < 10 ? '0' + value : String(value);
