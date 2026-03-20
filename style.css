@@ -493,10 +493,18 @@ img { max-width: 100%; display: block; }
 }
 .sponsor { text-align: center; }
 .sponsor__icon {
-  width: 5rem; height: 5rem; background: var(--muted-bg); border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  background: transparent;
+  border-radius: 0;
   display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem;
 }
 .sponsor__icon i { font-size: 1.5rem; color: var(--secondary); }
+.sponsor__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .sponsor p { font-size: 0.75rem; font-weight: 600; color: var(--muted-text); }
 
 /* ═══════════════════════════
