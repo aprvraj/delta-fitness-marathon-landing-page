@@ -489,7 +489,11 @@ img { max-width: 100%; display: block; }
    SPONSORS
    ═══════════════════════════ */
 .sponsors {
-  display: flex; align-items: center; justify-content: center; gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem 2.5rem;
 }
 .sponsor { text-align: center; }
 .sponsor__icon {
@@ -497,7 +501,7 @@ img { max-width: 100%; display: block; }
   height: 7rem;
   background: transparent;
   border-radius: 0;
-  display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem;
+  display: flex; align-items: center; justify-content: center; margin: 0 auto;
 }
 .sponsor__icon i { font-size: 1.5rem; color: var(--secondary); }
 .sponsor__logo {
@@ -505,7 +509,10 @@ img { max-width: 100%; display: block; }
   height: 100%;
   object-fit: contain;
 }
-.sponsor p { font-size: 0.75rem; font-weight: 600; color: var(--muted-text); }
+@media (min-width: 768px) {
+  .sponsors { gap: 2.5rem 3rem; }
+  .sponsor__icon { width: 7.5rem; height: 7.5rem; }
+}
 
 /* ═══════════════════════════
    TESTIMONIALS
